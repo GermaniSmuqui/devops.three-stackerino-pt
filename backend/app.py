@@ -6,7 +6,7 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 # Variáveis de ambiente (com valores por omissão)
-PORT   = int(os.getenv("PORT", 5500))      # ex.: "5500"
+PORT   = int(os.getenv("PORT", 5513))      # ex.: "5500"
 NUMBER = os.getenv("NUMBER", "0")          # ex.: "1" (útil para distinguir backends)
 
 # ONDE está a base de dados? (o upstream do backend)
