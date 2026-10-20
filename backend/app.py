@@ -8,6 +8,8 @@ app = Flask(__name__)
 # Variáveis de ambiente (com valores por omissão)
 PORT   = int(os.getenv("PORT", 5513))      # ex.: "5500"
 NUMBER = os.getenv("NUMBER", "0")          # ex.: "1" (útil para distinguir backends)
+PORT   = int(os.getenv("PORT", 5501))
+NUMBER = os.getenv("NUMBER", "2")  
 
 # ONDE está a base de dados? (o upstream do backend)
 DB_HOST     = os.getenv("DB_HOST", "localhost")
