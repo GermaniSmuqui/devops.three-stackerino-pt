@@ -4,9 +4,9 @@ require("dotenv").config()
 const app = express()
 app.use(express.urlencoded({ extended: false }))
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 4013
 // ONDE está o backend? Esta é a variável mais importante do frontend!
-const backendUrl = process.env.BACKEND_URL || "http://localhost:5500"
+const backendUrl = process.env.BACKEND_URL || "http://localhost:5513"
 
 // Evita que alguém injete HTML/JavaScript através de uma mensagem
 const escapar = (s) =>
